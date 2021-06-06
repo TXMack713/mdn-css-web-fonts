@@ -1,22 +1,62 @@
-html,
-body {
-  margin: 0;
-  padding: 0;
-  overflow: auto;
-  word-break: break-all;
-  hyphens: auto;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+/*Webfont Integration*/
+@font-face {
+    font-family: "dancing-script";
+    src:    url("dancing-script-web/dancingscript-regular-webfont.woff2") format("woff2"),
+            url("dancing-script-web/dancingscript-regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
+@font-face {
+    font-family: 'fira-sans';
+    src:    url('fira-sans-webfont/firasans-regular-webfont.woff2') format('woff2'),
+            url('fira-sans-webfont/firasans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sofia';
+    src:    url('sofia-webfont/sofia-regular-webfont.woff2') format('woff2'),
+            url('sofia-webfont/sofia-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* General setup */
+
+html {
+    font-size: 10px;
+    margin: 0;
+    font-family: sans-serif;
 }
 
 body {
-  background: hsl(189,95%,42%);
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'dancing-script', Arial, sans-serif;
+}
+
+h1 {
+    font-size: 3.2rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    word-spacing: 0.6rem;
+    /*Google font*/
+    font-family: 'Pacifico', cursive;
+    /* downloaded font */
+    /*font-family: "fira-sans", sans-serif;*/
 }
